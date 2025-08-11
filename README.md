@@ -33,12 +33,13 @@ A modern Android application using **Clean Architecture**, **MVVM**, and **Jetpa
 
 ##  Repo Structure
 
-NewsApp/
-├── app/ # App module (Compose screens, ViewModels)
-├── data/ # Repositories, API (Retrofit), Room DB
-├── domain/ # Use cases, models, repository interfaces
-├── di/ # Hilt modules
-└── utils/ # Constants, extensions, helpers
+
+- **`data/`** → Handles API calls, Room database, DTOs, and mappers  
+- **`domain/`** → Contains clean architecture models, repository interfaces, and business logic (Use Cases)  
+- **`presentation/`** → Jetpack Compose screens, ViewModels, navigation  
+- **`res/`** → Icons, strings, colors, themes  
+- **`test/` & `androidTest/`** → Unit & UI tests  
+
 
 Add your News API key (e.g., from NewsAPI.org) to local.properties:
 
