@@ -70,7 +70,8 @@ fun NewsNavigator() {
     }
 
 
-    Scaffold(modifier = Modifier.fillMaxSize(), bottomBar = {
+    Scaffold(modifier = Modifier.fillMaxSize(),
+        bottomBar = {
         if (isBottomBarVisible) {
             NewsBottomNavigation(
                 items = bottomNavigationItems,
